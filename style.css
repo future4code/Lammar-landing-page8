@@ -1,4 +1,5 @@
 
+
 body {
     font-family: 'Quicksand', sans-serif; 
 }
@@ -84,4 +85,102 @@ footer {
     left: 690px;
     top: 83px;
     width: 200px;
+=======
+/* montanto o cabeçalho */
+
+header{
+    display: flex;
+    background-color:white;
+    /* grid-template-columns: 1fr 4fr 1fr; */
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    /* color:rgb(0, 247, 255); */
+    
+}
+
+.logo{
+    width: 120px;
+   
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    justify-items: end;
+    /* color: #091227; */
+}
+
+a{
+    text-decoration-line: none;
+    color: #112250;
+}
+
+.botao{
+    width: 100px;
+    height: 30px;
+    background-color:#112250;
+    color: white;
+}
+
+/* ajustando a mais do "passo a passo" para contratar */
+
+h2{
+    text-align: center;
+}
+
+.passo-a-passo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    /* justify-items: center; */
+    padding-left: 250px;
+    padding-right: 250px;
+             
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#box1{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(74, 116, 172)
+}
+
+#box2{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(19, 34, 53)
+}
+
+#box3{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(83, 233, 213)
+}
+
+#box4{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(74, 116, 172)
+}
+
+#box5{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(19, 34, 53)
+}
+
+#box6{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(83, 233, 213)
+
 }
