@@ -1,0 +1,77 @@
+
+
+/* página de agendar visita */
+header{
+    display: flex;
+}    
+
+#frase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/-1;
+}
+
+
+/* ajusatar o body */
+
+body{
+    display: grid;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 50px;
+   
+}
+
+
+.grupo{
+    display: grid;
+    color: black;
+
+}
+
+
+fieldset{
+    background-color:rgb(229, 238, 238);
+    border: 0;
+}
+
+.grupo:before {
+    content:" ";
+    display: table;
+
+}
+
+.grupo:after {
+    content:" ";
+    display: table;
+    clear: both;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-top: 0.2em;
+    color: black;
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.botao{
+    
+    font-size: 1.5em;
+    background-color: rgb(19, 34, 53);
+    border: 1px;
+    margin-top: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    
+    
+}
+
