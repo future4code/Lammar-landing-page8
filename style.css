@@ -135,15 +135,12 @@ a{
     font-family: 'Quicksand', sans-serif;
   }
   
-  main {
-    background: rgb(224, 227, 228);
-  }
-  
+ 
   .polaroid {
     background: rgb(238, 243, 248);
-    padding: 15px 15px 40px;
+    padding: 25px 15px 70px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 15px;
   }
   
   .photo {
@@ -532,6 +529,7 @@ body {
     display: flex;
     
     
+    
 }
 
 section {
@@ -546,69 +544,60 @@ h2 {
 }
 
 footer {
-    display: flex;
-    align-items: center;
     width: 100%;
-    height: 350px;
+    height: 200px;
     background-color: rgb(19, 34, 53);
     color: white;
     
 }
 
+
+.footer-completo {
+    display: flex;
+    justify-content: space-around;
+}
+
 .endereço-e-redes-sociais {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     height: 50px;
     background-color: rgb(66, 86, 112);
 }
 
-.img-instagram {
-    position: absolute;
-    left: 20px;
-    top: 4850px;
+ .img-instagram {
     width: 20px;
     margin: 20px;
 }
 
 .img-facebook {
-    position: absolute;
-    left: 50px;
-    top: 4850px;
+    
     width: 20px;
     margin: 20px;
 }
 
 .img-twitter {
-    position: absolute;
-    left: 80px;
-    top: 4850px;
+
     width: 20px;
     margin: 20px;
 }
 
 .img-yt {
-    position: absolute;
-    left: 110px; 
-    top: 4850px;
+    
     width: 20px;
     margin: 20px;  
 }
 
 .img-linkedin{
-    position: absolute;
-    left: 138px;
-    top: 4850px;
+   
     width: 20px;
     margin: 20px;
-}
+} 
 
-.logo-footer {
-    position: absolute; 
-    left: 790px;
-    top: 4680px;
-    width: 200px;
-}
+ .logo-footer {
+    display: flex;
+    align-items: end;
+} 
 
 
