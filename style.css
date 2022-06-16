@@ -8,17 +8,19 @@
     /* grid-template-columns: 1fr 4fr 1fr; */
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
+    margin-left: 160px;
+    padding-top: 10px;
     /* color:rgb(0, 247, 255); */
     
 }
 
-.logo{
+.logo-cabecalho{
     width: 120px;
+    border-radius: 0;
    
 }
 
-.menu{
+.menu-cabecalho{
     display: flex;
     gap: 40px;
     justify-items: end;
@@ -30,9 +32,10 @@ a{
     color: #112250;
 }
 
-.botao{
+.botao-cabecalho{
     width: 100px;
-    height: 30px;
+    height: 40px;
+    margin-right: 170px;
     background-color:#112250;
     color: white;
 }
@@ -63,7 +66,6 @@ a{
     width: 320px;
     margin: 25px; 
     border-radius: 10px;
-    
   }
 
   .filter1-1{
@@ -75,6 +77,7 @@ a{
     margin: 15px;    
     text-align: left;
   }
+
 
   .filter1-2{
     display: flex;
@@ -146,7 +149,7 @@ a{
   .photo {
     width: 100%;
     height: 190px;
-    object-fit: cover;;
+    object-fit: cover;
   }
   
   .container {
@@ -163,7 +166,6 @@ a{
   .card {
     margin: 1px;
     border-radius: 5px;
-  ;
     box-shadow: 7px 7px 13px 0px rgba(172, 165, 165, 0.22);
     width: 190px;
     height: 190px;
@@ -203,10 +205,12 @@ a{
     margin-right: 5%;
     
   }
+
   .cama {
     width: 25px;
     margin-right: 5%;
   }
+
   .banheiro {
     width: 25px;
     margin-right: 5%;
@@ -247,6 +251,7 @@ a{
       display: grid;
       justify-items: center;
       width: 80%;
+      height:90%;
       text-align: left;
       font-size: 20px;
       color:rgb(5, 42, 110);   
@@ -257,8 +262,15 @@ a{
 
 /* ajustando a mais do "passo a passo" para contratar */
 
-h2{
+.frase{
+    padding: 20px;
+    display: grid;
+
+}
+
+#frase-passo-a-passo{
     text-align: center;
+    color: rgb(19, 34, 53);
 }
 
 .passo-a-passo{
@@ -313,7 +325,7 @@ h2{
 #box6{
     width: 5vw;
     height: 10vh;
-    border: 8px inset rgb(83, 233, 213)
+    border: 8px inset rgb(83, 233, 213);
 
 }
 
@@ -324,10 +336,13 @@ h2{
 
 .principal{
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: 6fr 4fr;
+    /* justify-content: space-between; */
+    grid-template-columns: 4fr 2fr;
     grid-template-rows: 1fr;
-    margin: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background: none;
+    justify-content: center;
     
 
 }
@@ -342,12 +357,11 @@ h2{
 .foto1{
     display: flex;
     width: 100%;
-    height: 100%;
-    /* justify-content: center;
-    align-items: center; */
+    height: 80%;
+    /* /* justify-content: center; */
+    align-items: center;
     vertical-align: middle;
-
-
+    border-radius: 0;
 }
 
 #foto2{
@@ -357,7 +371,9 @@ h2{
     align-items: center;
     /* box-shadow: 2px 2px 5px darkgrey;
         */
+    border-radius: 0;
     }
+
 
 #foto3{
     display: flex;
@@ -377,12 +393,20 @@ h2{
     color: white;
 }
 
+
+
 /* container com ícones de descrição*/
 
-.icone{
+.descricao{
+    display: grid;
+    background: none;
+}
+
+.icone-descricao{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    background: none;
+    /* padding: 10px; */
     margin: 100px;
     text-align: center;
     color: green;
@@ -393,6 +417,11 @@ h2{
     width: 30%;
 }
 
+#descricao-apt{
+    color: white;
+    padding-bottom: 20px;
+}
+
 #para-n{
     color: red;
 }
@@ -401,19 +430,18 @@ h2{
     display: flex;
     justify-content: center;
 }
-.botao{
+
+.botao-agendar{
     width: 300px;
     height: 50px;
     font-size: 20px;
     background: rgb(92, 191, 236);
     color: black;
-    border-radius: 1px;
     align-content: center;
     text-align: center;
     padding: 10px;
     
 }
-
 
 
 /* página de agendar visita */
@@ -480,7 +508,7 @@ fieldset.grupo .campo{
     margin-right: 1em;
 }
 
-.botao{
+.botao-enviar{
     
     font-size: 1.5em;
     background-color: rgb(19, 34, 53);
@@ -513,7 +541,7 @@ section {
 
 h2 {
     font-size: 18px;
-    font-weight: lighter
+    font-weight: lighter;
     
 }
 
@@ -562,7 +590,7 @@ footer {
 
 .img-yt {
     position: absolute;
-    left: 110px;
+    left: 110px; 
     top: 4850px;
     width: 20px;
     margin: 20px;  

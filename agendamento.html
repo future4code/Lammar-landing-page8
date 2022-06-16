@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="cabecalho">
+    <div>
+        <a href="index.html"><img class="logo-cabecalho" src="img/logo-menor.png" alt="Logo F4Life"></a>
+    </div>
+
+    <nav class="menu-cabecalho">
+        <a href="index.html">Página Inicial</a>
+        <a href="buscaImoveis.html">Buscar imóveis</a>
+        <a href="vantagens.html">Vantagens</a>
+        
+    </nav>
+    
+    <button class="botao-cabecalho">
+        <!-- <img width="15px" src="img/perfil.webp" alt="ícone do perfil"> -->
+        Cadastrar
+    </button>
+
+</header>
+
+
+<body>
+    <main class="agendarvisita">
+        <section id="frase">
+            <h2>Escolha um dia e agendaremos para você!</h2>
+        </section>
+        <div class="formulario">
+            <form action="#" method="post">
+                <fieldset>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="name">Nome:</label>
+                                <input type="text" id="nome" name="nome" style="width:40em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail:</label>
+                                <input type="text" name="email" id="email" style="width:40em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="telefone">Telefone:</label>
+                                <input type="text" id="telefone" name="telefone" style="width: 20em" value="">
+                        </div>
+                </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="data">Data de interesse:</label>
+                            <input type="text" name="data" id="data"  style="width:20em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="horario">Horário de sua preferência</label>
+                            <input class="form-hora" type="number"  style="width:10em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Queremos ouvir você! Escreva-nos e te responderesmo em breve!</label>
+                            <textarea id="mensagem" name="mensagem" rows="8" cols="75"></textarea> 
+                    </div>
+                    <div>
+                        <button class="botao-enviar" type="submit" name="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+       </div>
+</body>
+
+<footer>
+    <div class="footer-completo">
+        <section>
+           <h1>Sobre nós</h1>
+           <h2>Como surgimos</h2>
+           <h2>Qual o nosso propósito?</h2>
+           <h2>Por que confiar na gente?</h2>
+           <h2>O que podemos te garantir</h2>
+           <img class="img-instagram" src="./img/instagram.png" alt="Imagem para ir ao Instagram">
+           <img class="img-facebook" src="./img/facebook (1).png" alt="Imagem para ir ao facebook">
+           <img class="img-twitter" src="./img/twitter.png" alt="Imagem para ir ao Twitter">
+           <img class="img-yt" src="./img/youtube.png" alt="Imagem para ir ao Youtube">
+           <img class="img-linkedin" src="./img/linkedin.png" alt="Imagem para ir ao Linkedin">
+        </section>
+        <section>
+            <h1>Nossos serviços</h1>
+            <h2>Anucie</h2>
+            <h2>Indique e ganhe</h2>
+            <h2>Trabalhe com fotografia</h2>
+            <h2>Divulgue</h2>
+         </section>
+    </div>
+    <img class="logo-footer" src="./img/logo.jpg" alt="logo-dentro-do-footer">
+</footer>
+
+<div class="endereço-e-redes-sociais">
+    © 2022  F4Life S.A 
+    Rua Principal, s/n - CEARÁ, CE - 000990-000
+</div>
+
+</html>
