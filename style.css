@@ -8,17 +8,19 @@
     /* grid-template-columns: 1fr 4fr 1fr; */
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
+    margin-left: 160px;
+    padding-top: 10px;
     /* color:rgb(0, 247, 255); */
     
 }
 
-.logo{
+.logo-cabecalho{
     width: 120px;
+    border-radius: 0;
    
 }
 
-.menu{
+.menu-cabecalho{
     display: flex;
     gap: 40px;
     justify-items: end;
@@ -30,9 +32,10 @@ a{
     color: #112250;
 }
 
-.botao{
+.botao-cabecalho{
     width: 100px;
-    height: 30px;
+    height: 40px;
+    margin-right: 170px;
     background-color:#112250;
     color: white;
 }
@@ -63,7 +66,6 @@ a{
     width: 320px;
     margin: 25px; 
     border-radius: 10px;
-    
   }
 
   .filter1-1{
@@ -75,6 +77,7 @@ a{
     margin: 15px;    
     text-align: left;
   }
+
 
   .filter1-2{
     display: flex;
@@ -132,21 +135,18 @@ a{
     font-family: 'Quicksand', sans-serif;
   }
   
-  main {
-    background: rgb(224, 227, 228);
-  }
-  
+ 
   .polaroid {
-    background: rgb(238, 243, 248);
-    padding: 15px 15px 40px;
+    background: #112250;
+    padding: 25px 15px 70px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 15px;
   }
   
   .photo {
     width: 100%;
     height: 190px;
-    object-fit: cover;;
+    object-fit: cover;
   }
   
   .container {
@@ -163,8 +163,7 @@ a{
   .card {
     margin: 1px;
     border-radius: 5px;
-  ;
-    box-shadow: 7px 7px 13px 0px rgba(172, 165, 165, 0.22);
+    box-shadow: 7px 7px 13px 0px #112250;
     width: 190px;
     height: 190px;
     transition: all 0.3s ease-out;
@@ -203,17 +202,20 @@ a{
     margin-right: 5%;
     
   }
+
   .cama {
     width: 25px;
     margin-right: 5%;
   }
+
   .banheiro {
     width: 25px;
     margin-right: 5%;
   }
   
   h2 {
-    color: rgb(53, 64, 68);
+    color: white;
+    font-weight: bold;
   }
   
   
@@ -247,6 +249,7 @@ a{
       display: grid;
       justify-items: center;
       width: 80%;
+      height:90%;
       text-align: left;
       font-size: 20px;
       color:rgb(5, 42, 110);   
@@ -257,8 +260,15 @@ a{
 
 /* ajustando a mais do "passo a passo" para contratar */
 
-h2{
+.frase{
+    padding: 20px;
+    display: grid;
+
+}
+
+#frase-passo-a-passo{
     text-align: center;
+    color: rgb(19, 34, 53);
 }
 
 .passo-a-passo{
@@ -313,7 +323,7 @@ h2{
 #box6{
     width: 5vw;
     height: 10vh;
-    border: 8px inset rgb(83, 233, 213)
+    border: 8px inset rgb(83, 233, 213);
 
 }
 
@@ -324,30 +334,41 @@ h2{
 
 .principal{
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: 6fr 4fr;
+    /* justify-content: space-between; */
+    grid-template-columns: 4fr 2fr;
     grid-template-rows: 1fr;
-    margin: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background: none;
+    justify-content: center;
+    column-gap: 10px;
     
 
 }
 
 .adicional{
     display: grid;
-    grid-template-rows: 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(223, 242, 253);
+    /* padding-right: 50px; */
+    justify-content: center;
+    align-items: center;
+ 
+    
 }
 
 
 
 .foto1{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(223, 242, 253);
     width: 100%;
-    height: 100%;
-    /* justify-content: center;
-    align-items: center; */
-    vertical-align: middle;
-
-
+    height: 90%;
+    /* /* justify-content: center; */
+    align-items: center;
+   
 }
 
 #foto2{
@@ -357,7 +378,11 @@ h2{
     align-items: center;
     /* box-shadow: 2px 2px 5px darkgrey;
         */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-bottom: 0px; */
     }
+
 
 #foto3{
     display: flex;
@@ -365,25 +390,37 @@ h2{
     justify-content: center;
     align-items: center;
     /* box-shadow: 2px 2px 5px darkgrey; */
-    padding: 20px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
 }
 
     /* caixa com texto sobre o imóvel*/
 
 .texto{
     padding: 20px;
-    margin: 100px;
+    padding-left: 100px;
+
     background-color: rgb(19,34,53);
     color: white;
 }
 
+
+
 /* container com ícones de descrição*/
 
-.icone{
+.descricao{
+    display: grid;
+    background: none;
+}
+
+.icone-descricao{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin: 100px;
+    background: none;
+    /* padding: 10px; */
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: center;
     color: green;
     
@@ -391,6 +428,11 @@ h2{
 
 .img-icone{
     width: 30%;
+}
+
+#descricao-apt{
+    color: white;
+    padding-bottom: 20px;
 }
 
 #para-n{
@@ -401,19 +443,18 @@ h2{
     display: flex;
     justify-content: center;
 }
-.botao{
+
+.botao-agendar{
     width: 300px;
     height: 50px;
     font-size: 20px;
     background: rgb(92, 191, 236);
     color: black;
-    border-radius: 1px;
     align-content: center;
     text-align: center;
     padding: 10px;
     
 }
-
 
 
 /* página de agendar visita */
@@ -435,8 +476,9 @@ header{
 .agendarvisita{
     display: grid;
     justify-content: center;
-    margin-left: 80px;
-    margin-right: 50px;
+    /* margin-left: 80px;
+    margin-right: 50px; */
+    background-color:  rgb(223, 242, 253);
    
 }
 
@@ -449,7 +491,7 @@ header{
 
 
 fieldset{
-    background-color:rgb(229, 238, 238);
+    /* background-color:rgb(229, 238, 238); */
     border: 0;
 }
 
@@ -480,15 +522,17 @@ fieldset.grupo .campo{
     margin-right: 1em;
 }
 
-.botao{
-    
+.botao-enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5em;
     background-color: rgb(19, 34, 53);
     border: 1px;
     margin-top: 1em;
+    margin-bottom: 1em;
     color: white;
     padding: 0.2em 0.6em;
-    
     
 }
 
@@ -504,6 +548,7 @@ body {
     display: flex;
     
     
+    
 }
 
 section {
@@ -513,74 +558,65 @@ section {
 
 h2 {
     font-size: 18px;
-    font-weight: lighter
+    font-weight: lighter;
     
 }
 
 footer {
-    display: flex;
-    align-items: center;
     width: 100%;
-    height: 350px;
+    height: 200px;
     background-color: rgb(19, 34, 53);
     color: white;
     
 }
 
+
+.footer-completo {
+    display: flex;
+    justify-content: space-around;
+}
+
 .endereço-e-redes-sociais {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     height: 50px;
     background-color: rgb(66, 86, 112);
 }
 
-.img-instagram {
-    position: absolute;
-    left: 20px;
-    top: 4850px;
+ .img-instagram {
     width: 20px;
     margin: 20px;
 }
 
 .img-facebook {
-    position: absolute;
-    left: 50px;
-    top: 4850px;
+    
     width: 20px;
     margin: 20px;
 }
 
 .img-twitter {
-    position: absolute;
-    left: 80px;
-    top: 4850px;
+
     width: 20px;
     margin: 20px;
 }
 
 .img-yt {
-    position: absolute;
-    left: 110px;
-    top: 4850px;
+    
     width: 20px;
     margin: 20px;  
 }
 
 .img-linkedin{
-    position: absolute;
-    left: 138px;
-    top: 4850px;
+   
     width: 20px;
     margin: 20px;
-}
+} 
 
-.logo-footer {
-    position: absolute; 
-    left: 790px;
-    top: 4680px;
-    width: 200px;
-}
+ .logo-footer {
+    display: flex;
+    align-items: end;
+} 
 
 
