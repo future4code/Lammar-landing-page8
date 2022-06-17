@@ -2,6 +2,8 @@
 
 /* montanto o cabeçalho */
 
+
+
 .cabecalho{
     display: flex;
     background-color:white;
@@ -40,7 +42,41 @@ a{
     color: white;
 }
 
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+    .cabecalho{
+        display:flex;
+        margin-left: 5px;
+        padding: 2em;
+        
+    }
+    
+    .logo-cabecalho{
+        display: flex;
+        width: 20vw;
+        height: 5vh;
+        border-radius: 0;
+        padding-right: 1em;
+              
+       
+    }
+    .botao-cabecalho{
+        display: none;
+    }
 
+    .menu-cabecalho{
+        font-size: 10px;
+        
+    }
+
+    #vant{
+        display:none;
+    }
+    #desc{
+        display:none;
+    }
+    
+    
+}
 
 
 /* Estilizando filtro de busca */
@@ -479,6 +515,33 @@ header{
     margin-right: 50px; */
     background-color:  rgb(223, 242, 253);
    
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+    .agendarvisita{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        justify-content: center;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 0;
+    }
+
+    #frase{
+        font-size: 10px;
+    }
+
+    .grupo{
+        margin-left: 1em;
+       
+    }
+    .campo-mensagem{
+        display: none;
+    
+    }
+        
+    
 }
 
 

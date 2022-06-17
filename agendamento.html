@@ -16,9 +16,9 @@
     <nav class="menu-cabecalho">
         <a href="index.html">Página Inicial</a>
         <a href="buscaImoveis.html">Buscar imóveis</a>
-        <a href="vantagens.html">Vantagens</a>
-        <a href="descricao.html">Detalhamento do Imóvel</a>
-        <a href="agendamento.html">Agende uma visita</a>
+        <a id="vant" href="vantagens.html">Vantagens</a>
+        <a id="desc" href="descricao.html">Detalhamento do Imóvel</a>
+        <a href="agendamento.html">Agendar visita</a>
     </nav>
     
     <button class="botao-cabecalho">
@@ -32,7 +32,7 @@
 <body>
     <main class="agendarvisita">
         <section id="frase">
-            <h1>Escolha um dia e agendaremos para você!</h1>
+            <h1>Vamos agendar uma visita?</h1>
         </section>
         <div class="formulario">
             <form action="#" method="post">
@@ -40,27 +40,27 @@
                     <fieldset class="grupo">
                         <div class="campo">
                             <label for="name">Nome:</label>
-                                <input type="text" id="nome" name="nome" style="width:40em" value="">
+                                <input type="text" id="nome" name="nome" style="width:19em" value="">
                         </div>
                         <div class="campo">
                             <label for="email">E-mail:</label>
-                                <input type="text" name="email" id="email" style="width:40em" value="">
+                                <input type="text" name="email" id="email" style="width:19em" value="">
                         </div>
                         <div class="campo">
                             <label for="telefone">Telefone:</label>
-                                <input type="text" id="telefone" name="telefone" style="width: 20em" value="">
+                                <input type="text" id="telefone" name="telefone" style="width: 10em" value="">
                         </div>
                 </fieldset>
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="data">Data de interesse:</label>
-                            <input type="text" name="data" id="data"  style="width:20em" value="">
+                            <input type="text" name="data" id="data"  style="width:10em" value="">
                     </div>
                     <div class="campo">
                         <label for="horario">Horário de sua preferência</label>
                             <input class="form-hora" type="number"  style="width:10em" value="">
                     </div>
-                    <div class="campo">
+                    <div class="campo-mensagem">
                         <label for="mensagem">Queremos ouvir você! Escreva-nos e te responderesmo em breve!</label>
                             <textarea id="mensagem" name="mensagem" rows="8" cols="75"></textarea> 
                     </div>
