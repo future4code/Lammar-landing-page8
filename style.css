@@ -497,29 +497,43 @@ h4{
         padding-left: 1em;
         
     }
-   
-    .descricao{
+    
+          
+    /* .principal{
         display: grid;
-    
-    }
-    
-    .principal{
-        display: flex;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
+        margin-right: 10px;
+       
 
+
+    } */
+    /* #foto.sala{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-right: 10em;
+        margin-left: 2em;
+       
+    } */
+
+    .adicional{
+        display: none;
     }
 
     .foto1{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
         width: 200%;
+        margin-right: 10px;
+        padding-bottom: 1em;
         align-items: center;
         text-align: center;
+        background-color: white;
                       
     }
 
-    /* .adicional{
-        display: none;
-    } */
+    
 
     .texto{
         font-size:xx-small;
