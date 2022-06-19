@@ -56,8 +56,8 @@ a{
         border-radius: 0;
         padding-right: 1em;
               
-       
     }
+
     .botao-cabecalho{
         display: none;
     }
@@ -315,8 +315,7 @@ a{
   .sala {
     width: 25px;
     margin-right: 5%;
-    
-  }
+ }
 
   .cama {
     width: 25px;
@@ -611,33 +610,69 @@ h4{
 
 @media screen and (min-device-width: 320px) and (max-device-width:480px) {
     
-    .cabecalho{
-        padding-left: 1em;
+       
+        .cabecalho{
+            display:flex;
+            /* margin-left: 5px; */
+            padding: 2em;
+            margin-right: 200px;
+            
+        }
+        
+        .logo-cabecalho{
+            display: flex;
+            width: 20vw;
+            height: 5vh;
+            border-radius: 0;
+            padding-right: 1em;
+                  
+           
+        }
+
+        .botao-cabecalho{
+            display: none;
+        }
+    
+        .menu-cabecalho{
+            font-size: 10px;
+            
+        }
+    
+        #vant{
+            display:none;
+        }
+
+        #desc{
+            display:none;
+        }
+
+       
+        
         
     }
+    
+          
    
-    .descricao{
-        display: grid;
-    
-    }
-    
-    .principal{
-        display: flex;
-        justify-content: center;
 
+    .adicional{
+        display: none;
     }
 
     .foto1{
+
         display: flex;
-        width: 200%;
-        align-items: center;
-        text-align: center;
-                      
+        /* flex-direction: column; */
+        justify-content: center;
+        margin-right: 3em;
+        padding: 0;
+        /* display: flex;
+        /* grid-template-columns: 1fr; */
+        width:100%;
+        margin-left: 0;
+    
     }
 
-    /* .adicional{
-        display: none;
-    } */
+    
 
     .texto{
         font-size:xx-small;
@@ -660,6 +695,7 @@ h4{
         width:100px;
         height: 30px;
         font-size: xx-small;
+        justify-content: center;
     }
 
     #botao-agend{
@@ -667,7 +703,6 @@ h4{
         
     }
 
-}
 
 /* página de agendar visita */
 
@@ -725,6 +760,7 @@ header{
         display: none;
     
     }
+    
         
 }
 
@@ -782,6 +818,11 @@ fieldset.grupo .campo{
 
 /* footer */
 
+
+
+
+
+
 body {
     font-family: 'Quicksand', sans-serif; 
 }
@@ -804,6 +845,23 @@ footer {
     height: 200px;
     background-color: rgb(19, 34, 53);
     color: white;   
+}
+
+.img-footer-menor{
+    visibility: hidden
+}
+
+
+h3 {
+    visibility: hidden;
+}
+
+.container2 {
+    display: none;
+}
+
+.slider{
+    display: none;
 }
 
 .footer-completo {
@@ -854,8 +912,182 @@ footer {
     align-items: end;
 } 
 
+
 .nossos-servicos{
     color: white;
 }
+
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+    
+     .footer-completo {
+        visibility: hidden
+    }
+    .endereço-final-footer{
+        visibility: hidden
+    }
+
+    .slider{
+        display: block;
+    }
+
+    .endereço-e-redes-sociais{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .endereço-e-redes-sociais {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 110px;
+        background-color: rgb(66, 86, 112);
+    }
+
+    h3 {
+        visibility: visible;
+    }
+
+    .polaroid{display: none;}
+
+    /* .container2 {
+        display: block;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    section .card .image {
+        height: 90%;
+        width: 90%;
+        border-radius: 10%;
+        padding: 3px;
+        margin: 10px;
+        background: #7d2ae8;
+
+    }
+
+    section .card .image img {
+        height: 50%;
+        width: 90%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        text-align: center;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 20px;
+    } */
+
+
+
+    #slider ipnput[type-radio]{
+        display: none;
+    }
+
+    #slider label {
+        cursor: pointer;
+    }
+
+    #slides {
+        padding: 30px;
+        border: 3px solid #ccc;
+        background: rgb(66, 86, 112);
+        position: relative;
+        z-index: 1;
+    }
+    #overflow {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #slide1:checked ~ #slides .inner {
+        margin-left: 4%;
+    }
+    #slide2:checked ~ #slides .inner {
+        margin-left: -100%;
+    }
+
+    #slide3:checked ~ #slides .inner {
+        margin-left: -200%;
+    }
+
+    #slide4:checked ~ #slides .inner {
+        margin-left: -300%;
+    }
+
+    #slides .inner {
+        transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000 );
+        width: 400%;
+        /* line-height: 0; */
+        height: 200px;
+    }
+
+    #slides .slide {
+        width: 22%;
+        margin: 8px;
+        float: left;
+        display: block;
+        height: 100px;
+    }
+
+    #slides .slide_1{
+
+        background-image: url(./img/imagem-ap-02.jfif);
+        border-radius: 10px;
+        width: 220px;
+        height: 200px;
+    }
+
+    #slides .slide_2{
+        background-image: url(./img/imagem-ap-03.jfif);
+        border-radius: 10px;
+        width: 220px;
+        height: 200px;
+    }
+
+    #slides .slide_3{
+        background-image: url(./img/imagem-ap-04.jfif);
+        border-radius: 10px;
+        width: 220px;
+        height: 200px;
+    }
+
+    #slides .slide_4{
+        background-image: url(./img/imagem-ap-05.jfif);
+        border-radius: 10px;
+        width: 220px;
+        height: 200px;
+    }
+
+    .slide-content {
+        padding: 10px;
+        
+    }
+
+    .botao-conhecer-mais {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    }
+
+     
+}
+
+    
 
 
