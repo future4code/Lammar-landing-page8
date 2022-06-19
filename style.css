@@ -57,8 +57,8 @@ a{
         border-radius: 0;
         padding-right: 1em;
               
-       
     }
+
     .botao-cabecalho{
         display: none;
     }
@@ -233,8 +233,7 @@ a{
   .sala {
     width: 25px;
     margin-right: 5%;
-    
-  }
+ }
 
   .cama {
     width: 25px;
@@ -493,44 +492,66 @@ h4{
 
 @media screen and (min-device-width: 320px) and (max-device-width:480px) {
     
-    .cabecalho{
-        padding-left: 1em;
+       
+        .cabecalho{
+            display:flex;
+            /* margin-left: 5px; */
+            padding: 2em;
+            margin-right: 200px;
+            
+        }
+        
+        .logo-cabecalho{
+            display: flex;
+            width: 20vw;
+            height: 5vh;
+            border-radius: 0;
+            padding-right: 1em;
+                  
+           
+        }
+
+        .botao-cabecalho{
+            display: none;
+        }
+    
+        .menu-cabecalho{
+            font-size: 10px;
+            
+        }
+    
+        #vant{
+            display:none;
+        }
+
+        #desc{
+            display:none;
+        }
+
+       
+        
         
     }
     
           
-    /* .principal{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        margin-right: 10px;
-       
-
-
-    } */
-    /* #foto.sala{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        margin-right: 10em;
-        margin-left: 2em;
-       
-    } */
+   
 
     .adicional{
         display: none;
     }
 
     .foto1{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 200%;
-        margin-right: 10px;
-        padding-bottom: 1em;
-        align-items: center;
-        text-align: center;
-        background-color: white;
-                      
+
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        margin-right: 3em;
+        padding: 0;
+        /* display: flex;
+        /* grid-template-columns: 1fr; */
+        width:100%;
+        margin-left: 0;
+    
     }
 
     
@@ -556,6 +577,7 @@ h4{
         width:100px;
         height: 30px;
         font-size: xx-small;
+        justify-content: center;
     }
 
     #botao-agend{
@@ -563,7 +585,6 @@ h4{
         
     }
 
-}
 
 /* página de agendar visita */
 
@@ -946,21 +967,7 @@ h3 {
     
     }
 
- 
-
-
-
-
-
-    
-
-    
-  
-  
-
-
-
-    
+     
 
 }
 
