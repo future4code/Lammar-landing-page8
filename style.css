@@ -357,6 +357,15 @@ a{
 
 }
 
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+
+    .frase{
+        display: none;
+    }
+
+}
+
 /* Descrição de imóveis com ícones */
 
 /* caixas com imagens do imóvel */
@@ -424,9 +433,10 @@ a{
 
 .texto{
     padding: 10px;
-    padding-left: 100px;
+    padding-left: 200px;
     background-color: rgb(19,34,53);
     color: white;
+    
     
 }
 
@@ -526,15 +536,10 @@ h4{
 
         #desc{
             display:none;
-        }
-
-       
+        }     
         
-        
-    }
-    
           
-   
+
 
     .adicional{
         display: none;
@@ -584,6 +589,7 @@ h4{
         display: none;
         
     }
+}
 
 
 /* página de agendar visita */
