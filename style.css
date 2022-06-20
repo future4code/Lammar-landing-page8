@@ -734,6 +734,10 @@ header{
    
 }
 
+#vamosagendarvisita{
+    color:black
+}
+
 .formulario{
     display:flex;
    
@@ -843,7 +847,12 @@ section {
 
 h2 {
     font-size: 18px;
-    font-weight: lighter;   
+    font-weight: white;
+   
+}
+
+h1{
+    color: white;
 }
 
 footer {
@@ -926,6 +935,13 @@ h3 {
 
 @media screen and (min-device-width: 320px) and (max-device-width:480px) {
     
+
+    footer {
+        background-image: url(./img/logo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
      .footer-completo {
         visibility: hidden
     }
