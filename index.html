@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    
+    
+
+    <title>F4Life</title>
+</head>
+<body>
+   
+<header class="cabecalho">
+    <div>
+        <a href="index.html"><img class="logo-cabecalho" src="img/logo-menor.png" alt="Logo F4Life"></a>
+    </div>
+
+    <nav class="menu-cabecalho">
+        <a href="index.html">Página Inicial</a>
+        <a  href="#buscImov">Buscar imóveis</a>
+        <a id="vant" href="#sessaoVantagem">Vantagens</a>
+        <a id="desc" href="descricao.html">Detalhamento do Imóvel</a>
+        <a id="agend" href="agendamento.html">Agendar visita</a>
+        
+    </nav>
+    
+    <button class="botao-cabecalho">
+        <!-- <img width="15px" src="img/perfil.webp" alt="ícone do perfil"> -->
+        Cadastrar
+    </button>
+
+    </header>
+
+<body>
+    <section class="filtroDeBusca">
+        <div class="background">
+                <div class="filter1">
+                    <div class="filter1-1">
+                        <h3 id="titulo-form"> Ache sua república</h3>
+                        <form>
+                            <label for="pais"></label><input class="campo-form1" type="text" name="pais" id="pais" placeholder="País">
+                            <label for="cidade"></label><input class="campo-form1" type="text" name="cidade" id="cidade" placeholder="Cidade">
+                            <label for="permanencia"></label><input class="campo-form1" type="number" name="permanencia" id="permanencia" placeholder="Permanência (Em dias)">
+                       </form>
+                    </div>
+                    <div class="filter1-2">
+                        <form>
+                        <label for="valor"></label><input class="campo-form2" type="number" name="valor" id="valor" placeholder="Valor Máximo">
+                        <label for="nome"></label><input class="campo-form2" type="text" name="nome" id="nome" placeholder="N° de Quartos">
+                        <button class="button-filter" type="submit">Buscar sua casinha!</button>
+                        </form>                        
+                    </div>
+                </div>
+        </div>    
+    </section>
+
+    <main id="buscImov" class="imoveisDisponiveis">
+        <div class="container">
+            <div class="polaroid">
+                <div class="card borda">
+                    
+                    <a href="descricao.html"><img class="photo" src="./img/imoveil1.jpg" alt="Foto do imovel"></a>
+
+                    <div class="caption">
+                        <h2>Apartamento  R$500</h2>
+                        <div class="icones">
+                            <p>2</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>2</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+        
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-02.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Residencial  R$600 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+        
+                     </div>
+                </div>
+            </div>
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-03.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Residencial  R$420 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                             
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+
+                    <img class="photo" src="./img/imagem-ap-04.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Residencial  R$550 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-05.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Apartamento R$480 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-06.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Apartamento R$680 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-07.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Residencial  R$400 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-08.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Apartamento R$680</h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-09.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Apartamento R$520 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-10.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Apartamento R$450 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-11.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Residencial  R$400 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-12.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Residencial  R$400 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                    <img class="photo" src="./img/imagem-ap-13.jfif" alt="Foto do imovel">
+                    <div class="caption">
+                        <h2>Residencial  R$400 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+            
+
+            <div class="polaroid">
+                <div class="card borda">
+                <img class="photo" src="./img/imagem-ap-14.jfif" alt="Foto do imovel">
+                <div class="caption">
+                    <h2>Apartamento R$580 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                 </div>
+            </div>
+        </div>
+
+            <div class="polaroid">
+                
+                <div class="card borda">
+                <img class="photo" src="./img/imagem-ap-15.jfif" alt="Foto do imovel">
+                <div class="caption">
+                    <h2>Residencial  R$600 </h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                 </div>
+            </div>
+            </div>
+
+            <div class="polaroid">
+                <div class="card borda">
+                <img class="photo" src="./img/imagem-ap-16.jfif" alt="Foto do imovel">
+                <div class="caption">
+                    <h2>Apartamento 800</h2>
+                        <div class="icones">
+                            <p>1</p> <img class="sala" src="./img/sala-de-estar.png">
+                            <p>2</p> <img class="cama" src="./img/cama.png">
+                            <p>1</p> <img class="banheiro" src="./img/banheira.png">
+                        </div>
+                 </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- cards responsivos -->
+
+        <!-- <section>
+            <div class="container2">
+                <div class="content">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./img/imagem-ap-02.jfif" >
+                            </div>
+
+                            <div class="image">
+                                <img src="./img/imagem-ap-02.jfif" >
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      
+        </section> -->
+
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content"> 
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./descricao.html"><button class="botao-conhecer-mais">Conhecer mais</button></a>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label> 
+            </div>
+        </div>
+
+
+
+
+        
+        
+         
+    </main>
+
+    <div id="sessaoVantagem"class="sectionVantagens">
+        <div class="grid">
+            <div class="celula-grid">
+                <img src="img\projetoTrio_homeVantagens_iconeDinheiro.jpg" alt="imagem not found" width="100px">
+                <p>
+                    Agilidade na busca por sua casinha. 
+                   
+                </p>
+
+            </div>
+            <div class="celula-grid">
+                <img src="img\projetoTrio_homeVantagens_iconeDinheiro.jpg" alt="imagem not found" width="100px">
+                <p>
+                    Segurança para você e para quem aluga. 
+    
+                </p>
+                
+            </div>
+            <div class="celula-grid">
+                <img src="img\projetoTrio_homeVantagens_iconeDinheiro.jpg" alt="imagem not found" width="100px">
+                <p>
+                    Agilidadegilidade na hora de pagar sua hospedagem. 
+                    
+                </p>            
+            </div>
+            <div class="celula-grid">
+                <img src="img\projetoTrio_homeVantagens_iconeDinheiro.jpg" alt="imagem not found" width="100px">
+                <p>
+                    Garantia de qualidade nas moradias que oferecemos. 
+                   
+                    
+                </p>            
+            </div>
+        </div>
+    </div> 
+    
+
+    
+    
+    <main class="frase">
+        <section>
+            <h1 id="frase-passo-a-passo">Queremos receber você!</h1>
+        </section>
+        <section class="passo-a-passo">
+            <div class="box">
+                <img id="box1" src="img/definir.jpg" alt="Ícone para definir necessidades">
+                <p>Defina suas necessidades</p>
+            </div>
+            <div class="box">
+                <img id="box2" src="img/visitar.png" alt="Ícone para visitar o site">
+                <p>Visite nosso site</p>
+            </div>
+            <div class="box">
+                <img id="box3" src="img/escolher.jpg" alt="Ícone para escolher imóvel">
+                <p>Escolha o imóvel</p>
+            </div>
+            <div class="box">
+                <img id="box4" src="img/inscrever.png" alt="Ícone para se inscrever no sistema">
+                <p>Inscreva-se</p>
+            </div>
+            <div class="box">
+                <img id="box5" src="img/formalizar.png" alt="Ícone para formalizar o contrato">
+                <p>Formalize o contrato</p>
+            </div>
+            <div class="box">
+                <img id="box6" src="img/cliente.jpg" alt="Ícone para você é nosso cliente">
+                <p>Você agora é nosso cliente!</p>
+            </div>
+        </section>   
+    </main>
+
+</body>
+
+<footer>
+    <div class="footer-completo">
+        
+        <div class="sobre-nos">
+           <a href="#"><h1>Sobre nós</h1></a>
+           <a href="#"><h2>Como surgimos</h2></a>
+           <a href="#"><h2>Qual o nosso propósito?</h2></a>
+           <a href="#"> <h2>Por que confiar na gente?</h2></a>
+            <a href="#"><h2>O que podemos te garantir</h2></a>
+           
+        </div>
+        
+        <div class="nossos-servicos">
+            <a href="#"><h1>Nossos serviços</h1></a>
+            <a href="#"><h2>Anucie</h2></a>
+            <a href="#"><h2>Indique e ganhe</h2></a>
+            <a href="#"><h2>Trabalhe com fotografia</h2></a>
+            <a href="#"><h2>Divulgue</h2>  </a>
+        </div>
+
+</footer>
+
+
+
+<div class="endereço-e-redes-sociais">
+   <h2 class="endereço-final-footer"> © 2022  F4Life S.A 
+    Rua Principal, s/n - CEARÁ, CE - 000990-000</h2>
+
+    <h3>© 2022  F4Life S.A</h3>
+
+    <div imagens-redes>
+        <a href=""><img class="img-instagram" src="./img/instagram.png" alt="Imagem para ir ao Instagram"></a>
+        <a href=""><img class="img-facebook" src="./img/facebook.png" alt="Imagem para ir ao facebook"></a>
+        <a href=""><img class="img-twitter" src="./img/twitter.png" alt="Imagem para ir ao Twitter"></a>
+        <a href=""><img class="img-yt" src="./img/youtube.png" alt="Imagem para ir ao Youtube"></a>
+        
+     </div>
+     
+</div>
+
+</div>
+
+
+</html>
+

@@ -1,0 +1,1115 @@
+
+
+
+/* montanto o cabeçalho */
+
+
+.cabecalho{
+    display: flex;
+    background-color:white;
+    /* grid-template-columns: 1fr 4fr 1fr; */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 160px;
+    padding-top: 10px;
+    /* color:rgb(0, 247, 255); */ 
+}
+
+.logo-cabecalho{
+    width: 120px;
+    border-radius: 0;
+   
+}
+
+.menu-cabecalho{
+    display: flex;
+    gap: 40px;
+    justify-items: end;
+    /* color: #091227; */
+}
+
+a{
+    text-decoration-line: none;
+    color: #112250;
+}
+
+.botao-cabecalho{
+    width: 100px;
+    height: 40px;
+    margin-right: 170px;
+    background-color:#112250;
+    color: white;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+    .cabecalho{
+        display:flex;
+        margin-left: 5px;
+        padding: 2em;
+        
+    }
+    
+    .logo-cabecalho{
+        display: flex;
+        width: 20vw;
+        height: 5vh;
+        border-radius: 0;
+        padding-right: 1em;
+              
+    }
+
+    .botao-cabecalho{
+        display: none;
+    }
+
+    .menu-cabecalho{
+        font-size: 10px;
+        
+    }
+
+    #vant{
+        display:none;
+    }
+    #desc{
+        display:none;
+    }
+    
+    
+}
+
+/* Estilizando filtro de busca */
+
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+
+    .background{
+        display: flex;
+        width: 100%;
+        height: 540px;
+        margin: 50px auto 0 auto;
+        border-radius: 15px;
+        background-image: url(/img/f4sale_imagem-cabecalho.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: flex-end;
+      }
+    
+    .filter1{
+        display: flex;
+        flex-direction: column;   
+        justify-content: center; 
+        background-color: rgb(24, 92, 138);
+        height: 520px;
+        width: 320px;
+        margin: 10px; 
+        border-radius: 10px;
+      }
+    
+      .filter1-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 320px;
+        width: 200px;
+        margin: 15px;    
+        text-align: left;
+      }
+    
+      .filter1-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+        margin-left: 15px;
+      }
+    
+      .campo-form1 {
+        height: 70px;
+        width: 200px;
+        font-size: 16px;  
+        margin-bottom: 10px;  
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 10px;
+      }
+    
+      .campo-form2 {
+        height: 70px;
+        width: 200px;
+        font-size: 16px;
+        margin-bottom: 10px; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 10px;
+      }
+    
+      #titulo-form {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        color: white;
+        height: 70px;
+        width: 200px;
+        padding-top: 30px;
+      }
+    
+      .button-filter{
+        background-color: white;
+        height: 30px;
+        width: 140px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        border-radius: 5px;
+      }
+    }
+
+    @media screen and (min-device-width: 1200px) {
+
+        .background{
+            display: flex;
+            width: 100%;
+            height: 520px;
+            margin: 50px auto 0 auto;
+            border-radius: 15px;
+            background-image: url(/img/f4sale_imagem-cabecalho.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: flex-end;
+          }
+        
+        .filter1{
+            display: flex;
+            flex-direction: column;   
+            justify-content: center; 
+            background-color: rgb(24, 92, 138);
+            height: 470px;
+            width: 320px;
+            margin: 25px; 
+            border-radius: 10px;
+          }
+        
+          .filter1-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 320px;
+            width: 200px;
+            margin: 15px;    
+            text-align: left;
+          }
+        
+          .filter1-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: left;
+            margin-left: 15px;
+          }
+        
+          .campo-form1 {
+            height: 70px;
+            width: 280px;
+            font-size: 16px;  
+            margin-bottom: 10px;  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 10px;
+          }
+        
+          .campo-form2 {
+            height: 70px;
+            width: 130px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 10px;
+          }
+        
+          #titulo-form {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: white;
+            height: 70px;
+            width: 200px;
+          }
+        
+          .button-filter{
+            background-color: white;
+            height: 30px;
+            width: 140px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+          }
+        }
+
+/* Estilizando imóveis disponíveis */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+ 
+  .polaroid {
+    background: rgb(238, 243, 248);
+    padding: 25px 15px 70px;
+    height: 300px;
+    border-radius: 15px;
+  }
+  
+  .photo {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+  }
+  
+  .container {
+    display: grid;
+    padding: 20px;
+    margin: auto;
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  
+  
+  .card {
+    margin: 1px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(172, 165, 165, 0.22);
+    width: 190px;
+    height: 190px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  
+  .card p {
+    color: #151616;
+    font-size: 16px;
+  }
+   
+  .borda {
+    border-left: 3px solid rgb(19, 34, 53);
+    border-radius: 10px;
+  
+  }
+  
+  img {
+    border-radius: 10px;
+  }
+  
+  .icones {
+    display: flex;
+    justify-content: flex-start;   
+  }
+  
+  
+  .sala {
+    width: 25px;
+    margin-right: 5%;
+ }
+
+  .cama {
+    width: 25px;
+    margin-right: 5%;
+  }
+
+  .banheiro {
+    width: 25px;
+    margin-right: 5%;
+  }
+  
+  h2 {
+    color: rgb(53, 64, 68);
+  }
+  
+  
+
+/* Estilizando Vantagens */
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+
+  .sectionVantagens{
+      display: grid;
+      justify-items: center;
+      padding-top: 30px;
+      border-radius: 10px;
+  }
+  
+  .grid{
+      
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      width: 100%;
+      height: 1000px;
+      padding: 40px;
+  }
+  
+  .celula-grid{
+      background-color: white;
+      display: grid;
+      justify-items: center;
+      width: 80%;
+      height:90%;
+      text-align: left;
+      font-size: 20px;
+      color:rgb(5, 42, 110);   
+      border-radius: 10px;
+      padding: 10px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+
+    .sectionVantagens{
+        display: grid;
+        justify-items: center;
+        padding-top: 30px;
+        border-radius: 10px;
+    }
+    
+    .grid{
+        background-image: url(https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_960_720.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top ;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        width: 100%;
+        height: 400px;
+        padding: 40px;
+    }
+    
+    .celula-grid{
+        background-color: white;
+        display: grid;
+        justify-items: center;
+        width: 80%;
+        height:90%;
+        text-align: left;
+        font-size: 20px;
+        color:rgb(5, 42, 110);   
+        border-radius: 10px;
+        padding: 10px;
+    }
+  }
+
+/* ajustando a mais do "passo a passo" para contratar */
+
+.frase{
+    padding: 20px;
+    display: grid;
+
+}
+
+#frase-passo-a-passo{
+    text-align: center;
+    color: rgb(19, 34, 53);
+}
+
+.passo-a-passo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    /* justify-items: center; */
+    padding-left: 250px;
+    padding-right: 250px;
+             
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#box1{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(74, 116, 172)
+}
+
+#box2{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(19, 34, 53)
+}
+
+#box3{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(83, 233, 213)
+}
+
+#box4{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(74, 116, 172)
+}
+
+#box5{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(19, 34, 53)
+}
+
+#box6{
+    width: 5vw;
+    height: 10vh;
+    border: 8px inset rgb(83, 233, 213);
+
+}
+
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+
+    .frase{
+        display: none;
+    }
+
+}
+
+/* Descrição de imóveis com ícones */
+
+/* caixas com imagens do imóvel */
+
+.principal{
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr;
+    margin-left: 80px;
+    margin-right: 80px;
+    background: none;
+    justify-content: center;
+    column-gap: 10px;
+
+}
+
+.adicional{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(223, 242, 253);
+    /* padding-right: 50px; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.foto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(223, 242, 253);
+    width: 100%;
+    height: 90%;
+    /* /* justify-content: center; */
+    align-items: center;
+   
+}
+
+#foto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 2px 2px 5px darkgrey;
+        */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-bottom: 0px; */
+ }
+
+#foto3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 2px 2px 5px darkgrey; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+}
+
+    /* caixa com texto sobre o imóvel*/
+
+.texto{
+    padding: 10px;
+    padding-left: 200px;
+    background-color: rgb(19,34,53);
+    color: white;
+    
+    
+}
+
+h3{
+    padding-top: 0.5em;
+
+}    
+
+h4{
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+
+/* container com ícones de descrição*/
+
+.descricao{
+    display: grid;
+    background: none;
+}
+
+.icone-descricao1{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    /* padding: 10px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    color: green;
+    
+}
+
+.img-icone{
+    width: 30%;
+}
+
+#descricao-apt{
+    color: white;
+    padding-bottom: 20px;
+}
+
+#para-n{
+    color: red;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-agendar{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background: rgb(92, 191, 236);
+    color: black;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+    
+       
+        .cabecalho{
+            display:flex;
+            /* margin-left: 5px; */
+            padding: 2em;
+            margin-right: 200px;
+            
+        }
+        
+        .logo-cabecalho{
+            display: flex;
+            width: 20vw;
+            height: 5vh;
+            border-radius: 0;
+            padding-right: 1em;
+                  
+           
+        }
+
+        .botao-cabecalho{
+            display: none;
+        }
+    
+        .menu-cabecalho{
+            font-size: 10px;
+            
+        }
+    
+        #vant{
+            display:none;
+        }
+
+        #desc{
+            display:none;
+        }     
+        
+          
+
+
+    .adicional{
+        display: none;
+    }
+
+    .foto1{
+
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        margin-right: 3em;
+        padding: 0;
+        /* display: flex;
+        /* grid-template-columns: 1fr; */
+        width:100%;
+        margin-left: 0;
+    
+    }
+
+    
+
+    .texto{
+        font-size:xx-small;
+        padding-left: 2em;
+    
+    }
+
+    #descricao-apt{
+        font-size: small;
+        padding: 0;
+    }
+
+    .icone-descricao1{
+        display:none;
+
+    }
+
+    .botao-agendar{
+        display: flex;
+        width:100px;
+        height: 30px;
+        font-size: xx-small;
+        justify-content: center;
+    }
+
+    #botao-agend{
+        display: none;
+        
+    }
+}
+
+
+/* página de agendar visita */
+
+header{
+    display: flex;
+}    
+
+#frase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/-1;
+}
+
+/* ajustar a mais de agendar visita */
+
+.agendarvisita{
+    display: grid;
+    justify-content: center;
+    /* margin-left: 80px;
+    margin-right: 50px; */
+    background-color:  rgb(223, 242, 253);
+   
+}
+
+#vamosagendarvisita{
+    color:black
+}
+
+.formulario{
+    display:flex;
+   
+    width: 10em;
+    justify-content: center;
+    margin-left: 10em;
+    
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+    .agendarvisita{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        justify-content: center;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 0;
+    }
+
+    #frase{
+        font-size: 10px;
+    }
+
+    .grupo{
+        margin-left: 1em;
+       
+    }
+    .campo-mensagem{
+        display: none;
+    
+    }
+    
+        
+}
+
+.grupo{
+    display: grid;
+    color: black;
+
+}
+
+fieldset{
+    /* background-color:rgb(229, 238, 238); */
+    border: 0;
+}
+
+.grupo:before {
+    content:" ";
+    display: table;
+
+}
+
+.grupo:after {
+    content:" ";
+    display: table;
+    clear: both;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-top: 0.2em;
+    color: black;
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.botao-enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    background-color: rgb(19, 34, 53);
+    border: 1px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    
+}
+
+/* footer */
+
+
+
+
+
+
+body {
+    font-family: 'Quicksand', sans-serif; 
+}
+
+.footer-completo {
+    display: flex;
+}
+
+section {
+    margin: 30px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: white;
+   
+}
+
+h1{
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(19, 34, 53);
+    color: white;   
+}
+
+.img-footer-menor{
+    visibility: hidden
+}
+
+
+h3 {
+    visibility: hidden;
+}
+
+.container2 {
+    display: none;
+}
+
+.slider{
+    display: none;
+}
+
+.footer-completo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.endereço-e-redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(66, 86, 112);
+}
+
+.img-instagram {
+    width: 20px;
+    margin: 20px;
+}
+
+.img-facebook {
+    
+    width: 20px;
+    margin: 20px;
+}
+
+.img-twitter {
+
+    width: 20px;
+    margin: 20px;
+}
+
+.img-yt {
+    
+    width: 20px;
+    margin: 20px;  
+}
+
+.img-linkedin{
+   
+    width: 20px;
+    margin: 20px;
+} 
+
+.logo-footer {
+    display: flex;
+    align-items: end;
+} 
+
+
+.nossos-servicos{
+    color: white;
+}
+
+
+@media screen and (min-device-width: 320px) and (max-device-width:480px) {
+    
+
+    footer {
+        background-image: url(./img/logo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+     .footer-completo {
+        visibility: hidden
+    }
+    .endereço-final-footer{
+        visibility: hidden
+    }
+
+    .slider{
+        display: block;
+    }
+
+    .endereço-e-redes-sociais{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .endereço-e-redes-sociais {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 110px;
+        background-color: rgb(66, 86, 112);
+    }
+
+    h3 {
+        visibility: visible;
+    }
+
+    .polaroid{display: none;}
+
+    /* .container2 {
+        display: block;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    section .card .image {
+        height: 90%;
+        width: 90%;
+        border-radius: 10%;
+        padding: 3px;
+        margin: 10px;
+        background: #7d2ae8;
+
+    }
+
+    section .card .image img {
+        height: 50%;
+        width: 90%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        text-align: center;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 20px;
+    } */
+
+
+
+    #slider ipnput[type-radio]{
+        display: none;
+    }
+
+    #slider label {
+        cursor: pointer;
+    }
+
+    #slides {
+        padding: 30px;
+        border: 3px solid #ccc;
+        background: rgb(66, 86, 112);
+        position: relative;
+        z-index: 1;
+    }
+    #overflow {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #slide1:checked ~ #slides .inner {
+        margin-left: 4%;
+    }
+    #slide2:checked ~ #slides .inner {
+        margin-left: -100%;
+    }
+
+    #slide3:checked ~ #slides .inner {
+        margin-left: -200%;
+    }
+
+    #slide4:checked ~ #slides .inner {
+        margin-left: -300%;
+    }
+
+    #slides .inner {
+        transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000 );
+        width: 400%;
+        /* line-height: 0; */
+        height: 200px;
+    }
+
+    #slides .slide {
+        width: 22%;
+        margin: 8px;
+        float: left;
+        display: block;
+        height: 100px;
+    }
+
+    #slides .slide_1{
+
+        background-image: url(./img/imagem-ap-02.jfif);
+        border-radius: 10px;
+        width: 220px;
+        height: 200px;
+    }
+
+    #slides .slide_2{
+        background-image: url(./img/imagem-ap-03.jfif);
+        border-radius: 10px;
+        width: 220px;
+        height: 200px;
+    }
+
+    #slides .slide_3{
+        background-image: url(./img/imagem-ap-04.jfif);
+        border-radius: 10px;
+        width: 220px;
+        height: 200px;
+    }
+
+    #slides .slide_4{
+        background-image: url(./img/imagem-ap-05.jfif);
+        border-radius: 10px;
+        width: 220px;
+        height: 200px;
+    }
+
+    .slide-content {
+        padding: 10px;
+        
+    }
+
+    .botao-conhecer-mais {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    }
+
+     
+}
+
+    
+
+
